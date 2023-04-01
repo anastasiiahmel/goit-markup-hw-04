@@ -328,8 +328,6 @@ button {
   gap: 24px;
   margin-top: 72px;
 }
-.team-photo {
-}
 .team-img {
   text-decoration: none;
   text-align: center;
@@ -392,7 +390,8 @@ button {
   margin-left: 0;
 }
 .customers-item {
-  width: 168px;
+  width: calc((100% - 120px) / 6);
+  height: 88px;
   height: 88px;
 }
 
@@ -401,11 +400,11 @@ button {
   height: 100%;
   border: 1px solid #8e8f99;
   border-radius: 4px;
+  fill: currentColor;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #8e8f99;
-  cursor: pointer;
 }
 
 .customers-soc-link:hover,
@@ -423,6 +422,9 @@ button {
   background: var(--color-grey, #2e2f42);
   padding-top: 100px;
   padding-bottom: 100px;
+  max-width: 1140px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .footer-logo {
@@ -449,7 +451,6 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--color-cloud, #f4f4fd);
-  width: 1128px;
 }
 
 .footer-items {
@@ -467,36 +468,8 @@ button {
 
 .footer-soc-list {
   display: flex;
-  justify-content: center;
-  gap: 24px;
-  margin-top: 8px;
+  gap: 16px;
 }
-
-.footer-soc-item {
-  width: 40px;
-  height: 40px;
-}
-.footer-soc-link {
-  width: 100%;
-  height: 100%;
-  border-radius: 50%;
-  background-color: #4d5ae5;
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.footer-soc-link:hover,
-.footer-soc-link:hover {
-  background-color: #404bbf;
-}
-.footer-soc-icon {
-  fill: #ffffff;
-  width: 24px;
-  height: 24px;
-}
-
 .footer-title {
   font-family: "Roboto";
   font-style: normal;
@@ -505,9 +478,38 @@ button {
   line-height: 1.5px;
   letter-spacing: 0.02em;
   color: #ffffff;
-  justify-content: center;
+  margin-bottom: 16px;
+}
+.footer-soc-item {
+  width: 40px;
+  height: 40px;
+  gap: 16px;
+}
+.footer-soc-link {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  background-color: #4d5ae5;
   display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.footer-title {
+.footer-soc-link:hover,
+.footer-soc-link:hover {
+  background-color: #31d0aa;
+}
+.footer-soc-icon {
+  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+}
+
+.footer-soc {
+  margin-left: 120px;
+}
+.footer-soc-cont {
+  display: flex;
+  align-items: stretch;
+  max-width: 1128px;
 }
