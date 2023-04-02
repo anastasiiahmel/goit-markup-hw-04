@@ -202,6 +202,8 @@ button {
 .filter-btn:focus {
   color: var(--color-white, #ffffff);
   background-color: var(--color-ocean, #404bbf);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 .filter-list {
   display: flex;
@@ -220,8 +222,6 @@ button {
 
 .example-img-text {
   display: block;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .example-photo {
   width: 360px;
@@ -250,21 +250,23 @@ button {
   border: 1px solid #e7e9fc;
   border-top: none;
   border: 1px solid #f4f4fd;
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+
   padding-top: 32px;
   padding-bottom: 32px;
   padding-left: 16px;
 }
+.example-img-text:hover,
+.example-img-text:focus {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+}
+
 /* ---------------footer------------------ */
 
 .footer {
-  background-color: var(--color-grey, #2e2f42);
+  background: var(--color-grey, #2e2f42);
   padding-top: 100px;
   padding-bottom: 100px;
-  max-width: 1140px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .footer-logo {
@@ -293,17 +295,6 @@ button {
   color: var(--color-cloud, #f4f4fd);
 }
 
-.footer-item {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0.02em;
-  color: var(--color-cloud, #f4f4fd);
-  margin-top: 18px;
-  margin-top: 18px;
-  max-width: 300px;
-}
-
 .footer-items {
   font-weight: 400;
   font-size: 16px;
@@ -311,7 +302,7 @@ button {
   letter-spacing: 0.02em;
   color: var(--color-cloud, #f4f4fd);
   margin-top: 18px;
-  max-width: 300px;
+  max-width: 264px;
 }
 
 .footer-bottom {
@@ -326,7 +317,7 @@ button {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 1.5px;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
   margin-bottom: 16px;
@@ -347,7 +338,7 @@ button {
 }
 
 .footer-soc-link:hover,
-.footer-soc-link:hover {
+.footer-soc-link:focus {
   background-color: #31d0aa;
 }
 .footer-soc-icon {
@@ -361,6 +352,4 @@ button {
 }
 .footer-soc-cont {
   display: flex;
-  align-items: stretch;
-  max-width: 1128px;
 }
